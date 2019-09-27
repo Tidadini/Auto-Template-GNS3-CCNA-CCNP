@@ -13,10 +13,7 @@ with open("person.json", "w") as json_file:
 with open("person.json", "r") as myfile:
     data = myfile.read()
 # parse file
-obj = json.loads(data)
-
 print("project_ID:  " + obj[0]["project_id"])
-
 myproject = str(obj[0]["project_id"])
 print(myproject)
 
