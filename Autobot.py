@@ -79,11 +79,8 @@ with open("nodes.json", "r") as myfile:
 # parse file
 obj = json.loads(data)
 # show all node ID
-print("node_ID:  " + obj[0]["node_id"])
-print("node_ID:  " + obj[1]["node_id"])
-print("node_ID:  " + obj[2]["node_id"])
-print("node_ID:  " + obj[3]["node_id"])
-print("node_ID:  " + obj[4]["node_id"])
+for i in range(0,5):
+    print("node_ID:  " + obj[i]["node_id"])
 
 # send command to GNS3 Server : create link between R1--Pc1
 PC1_R1 = (
