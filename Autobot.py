@@ -79,7 +79,7 @@ with open("nodes.json", "r") as myfile:
 # parse file
 obj = json.loads(data)
 # show all node ID
-for i in range(0,5):
+for i in range(0, 5):
     print("node_ID:  " + obj[i]["node_id"])
 
 # send command to GNS3 Server : create link between R1--Pc1
